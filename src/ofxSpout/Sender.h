@@ -16,10 +16,10 @@ namespace ofxSpout {
 		void release();
 		bool isInitialized() const;
 
-		bool send(const ofTexture &);
+		bool send(const ofTexture& texture);
 
 		std::string getChannelName() const;
-		bool setVerticalSync(bool);
+		bool setVerticalSync(bool verticalSync);
 		bool getVerticalSync();
 	protected:
 		std::string channelName;
