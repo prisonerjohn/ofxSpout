@@ -11,8 +11,8 @@ namespace ofxSpout {
 		Sender();
 		~Sender();
 
-		bool init(std::string channelName, const ofTexture& texture);
-		bool init(std::string channelName, int initialWidth = 64, int initialHeight = 64, int glFormat = GL_RGBA);
+		void init(std::string channelName, const ofTexture& texture);
+		void init(std::string channelName, int glFormat = GL_RGBA);
 		void release();
 		bool isInitialized() const;
 
