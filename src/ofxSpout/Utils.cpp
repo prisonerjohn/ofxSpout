@@ -32,6 +32,8 @@ namespace ofxSpout {
 		case GL_RG32F:
 		case GL_RGB32F:
 		case GL_RGBA32F:
+		case GL_LUMINANCE32F_ARB:
+		case GL_LUMINANCE_ALPHA32F_ARB:
 			return DXGI_FORMAT_R32G32B32A32_FLOAT;
 		case GL_RGBA16F:
 			return DXGI_FORMAT_R16G16B16A16_FLOAT;
@@ -39,10 +41,21 @@ namespace ofxSpout {
 		case GL_RG16:
 		case GL_RGB16:
 		case GL_RGBA16:
+		case GL_LUMINANCE16:
+		case GL_LUMINANCE16_ALPHA16:
 			return DXGI_FORMAT_R16G16B16A16_SNORM;
 		case GL_RGB10_A2:
 			return DXGI_FORMAT_R10G10B10A2_UNORM;
+		case GL_R8:
+		case GL_RG8:
+		case GL_RGB8:
 		case GL_RGBA8:
+		case GL_RGB:
+		case GL_RGBA:
+		case GL_LUMINANCE8:
+		case GL_LUMINANCE8_ALPHA8:
+		case GL_LUMINANCE:
+		case GL_LUMINANCE_ALPHA:
 			return DXGI_FORMAT_R8G8B8A8_UNORM;
 		case GL_BGRA:
 			return DXGI_FORMAT_B8G8R8A8_UNORM;
